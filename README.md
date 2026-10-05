@@ -14,9 +14,11 @@ I make things.
   <br>
   <a href="https://github.com/Unjuno/profile-doom/blob/main/state/game.json">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-v2-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-v2-light.svg">
-      <img src="https://unjuno.github.io/profile-doom/status-v2-light.svg" width="640" alt="Last recorded input and checkpoint time. Open the state record.">
+      <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-v3-mobile-dark.svg">
+      <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-v3-mobile-light.svg">
+      <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-v3-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-v3-light.svg">
+      <img src="https://unjuno.github.io/profile-doom/status-v3-light.svg" width="640" alt="Last recorded input and checkpoint time. Open the state record.">
     </picture>
   </a>
 </p>
