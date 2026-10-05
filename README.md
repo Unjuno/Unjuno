@@ -1,52 +1,85 @@
-# Unjuno
-
-Experimental systems, agents, neural computation, security, and strange interfaces.
+I make things.
 
 ### Runtime
 
-<table>
-  <tr>
-    <td>
-      <a href="https://github.com/Unjuno/profile-doom/issues/1">
-        <img src="https://unjuno.github.io/profile-doom/doom.gif" width="640" alt="Shared Freedoom session rendered by GitHub Actions">
-      </a>
-      <br>
-      <a href="https://github.com/Unjuno/profile-doom/issues/1">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-dark.svg">
-          <source media="(prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-light.svg">
-          <img src="https://unjuno.github.io/profile-doom/status-light.svg" width="640" alt="profile-doom shared runtime status">
-        </picture>
-      </a>
-    </td>
-  </tr>
-</table>
+<sub><strong>SESSION 01</strong> · shared checkpoint</sub>
 
-[Controller](https://github.com/Unjuno/profile-doom/issues/1) · [Actions](https://github.com/Unjuno/profile-doom/actions) · [Runtime source](https://github.com/Unjuno/profile-doom)
+<p>
+  <a href="https://github.com/Unjuno/profile-doom/issues/1">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset="https://unjuno.github.io/profile-doom/doom-still.png">
+      <img src="https://unjuno.github.io/profile-doom/doom.gif?profile=2" width="640" alt="Freedoom session replay. Open the shared controller.">
+    </picture>
+  </a>
+  <br>
+  <a href="https://github.com/Unjuno/profile-doom/blob/main/state/game.json">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-v2-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-v2-light.svg">
+      <img src="https://unjuno.github.io/profile-doom/status-v2-light.svg" width="640" alt="Last recorded input and checkpoint time. Open the state record.">
+    </picture>
+  </a>
+</p>
+
+[Input](https://github.com/Unjuno/profile-doom/issues/1) · [Runs](https://github.com/Unjuno/profile-doom/actions) · [Checkpoints](https://github.com/Unjuno/profile-doom/commits/main/state/game.json) · [Source](https://github.com/Unjuno/profile-doom)
 
 <details>
-<summary><strong>Controls</strong></summary>
+<summary><strong>Input reference</strong></summary>
 
-Comment exactly one command in the [controller issue](https://github.com/Unjuno/profile-doom/issues/1):
+Post **one** command as a comment in the [shared controller](https://github.com/Unjuno/profile-doom/issues/1). Each block can be copied separately.
 
+Forward
 ```text
 /forward
+```
+Back
+```text
 /back
+```
+Turn left
+```text
 /left
+```
+Turn right
+```text
 /right
+```
+Fire
+```text
 /fire
+```
+Use / open
+```text
 /use
 ```
 
-Every accepted command advances the same persistent game save.
+Everyone shares one save. After the run completes, reload the profile to fetch the next replay; image caching may delay an update. The links open the controller, not an immediate in-page game input.
 
 </details>
 
-### Current systems
+<details>
+<summary><strong>Processes</strong></summary>
 
-| | |
-|---|---|
-| [agent-interface](https://github.com/Unjuno/agent-interface) | A reactive computer-control runtime for AI agents. |
-| [resource-conditioned-neural-computation](https://github.com/Unjuno/resource-conditioned-neural-computation) | Resource/deadline-conditioned neural computation research. |
-| [TraceLeak](https://github.com/Unjuno/TraceLeak) | Source-level neural leakage assessment for cryptographic implementations. |
-| [llmclozestat](https://github.com/Unjuno/llmclozestat) | Cloze-based statistical profiling of LLM outputs. |
+| Process | Execution | State |
+| :-- | :-- | :-- |
+| [profile-doom](https://github.com/Unjuno/profile-doom) | On demand | [Shared checkpoint](https://github.com/Unjuno/profile-doom/blob/main/state/game.json) |
+
+</details>
+
+<details>
+<summary><strong>System</strong></summary>
+
+| Component | Surface |
+| :-- | :-- |
+| Display | This README |
+| Input | [Issue comments](https://github.com/Unjuno/profile-doom/issues/1) |
+| Compute | [GitHub Actions](https://github.com/Unjuno/profile-doom/actions) |
+| Persistence | [Save slot 0](https://github.com/Unjuno/profile-doom/tree/main/state/save) |
+
+Chocolate Doom + Freedoom. The screen is a recorded replay, not a live stream. Snapshot metadata describes the last persisted input; it is not a service-health monitor. This is a personal experiment, not a GitHub feature.
+
+</details>
+
+---
+
+<sub>[Elsewhere](http://unjuno.org/) · [Repositories](https://github.com/Unjuno?tab=repositories)</sub>
