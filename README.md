@@ -10,46 +10,46 @@ I make things.
       <source media="(max-width: 1011px) and (prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/panel-v4-mobile-dark.gif">
       <source media="(max-width: 1011px) and (prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/panel-v4-mobile-light.gif">
       <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/panel-v4-desktop-dark.gif">
-      <img src="https://unjuno.github.io/profile-doom/panel-v4-desktop-light.gif" width="800" alt="Runtime 01. A recorded Freedoom replay with the last saved input. One save, everyone plays. Take a turn: open the GitHub comment controller.">
+      <img src="https://unjuno.github.io/profile-doom/panel-v4-desktop-light.gif" width="800" alt="Runtime 01. A recorded Freedoom replay with the last saved input. One save, everyone plays.">
     </picture>
   </a>
 </p>
 
-[**Take a turn →**](https://github.com/Unjuno/profile-doom/issues/1) · [Runs](https://github.com/Unjuno/profile-doom/actions) · [Save history](https://github.com/Unjuno/profile-doom/commits/main/state/game.json) · [Source](https://github.com/Unjuno/profile-doom)
+<p align="center">
+  <a aria-label="Move forward" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20forward&amp;body=%2Fforward"><kbd>▲</kbd></a>
+  <br><br>
+  <a aria-label="Turn left" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20left&amp;body=%2Fleft"><kbd>◀</kbd></a>
+  &nbsp;
+  <a aria-label="Fire" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20fire&amp;body=%2Ffire"><kbd>FIRE</kbd></a>
+  &nbsp;
+  <a aria-label="Turn right" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20right&amp;body=%2Fright"><kbd>▶</kbd></a>
+  <br><br>
+  <a aria-label="Move back" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20back&amp;body=%2Fback"><kbd>▼</kbd></a>
+  &nbsp;
+  <a aria-label="Use or open" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20use&amp;body=%2Fuse"><kbd>USE</kbd></a>
+</p>
 
-<sub>Shared save. Comment-driven. Replayed here.</sub>
+<p align="center"><sub>Choose an input. GitHub opens a prefilled turn; press <strong>Submit new issue</strong> once to send it.</sub></p>
+
+[Controller](https://github.com/Unjuno/profile-doom/issues/1) · [Runs](https://github.com/Unjuno/profile-doom/actions) · [Save history](https://github.com/Unjuno/profile-doom/commits/main/state/game.json) · [Source](https://github.com/Unjuno/profile-doom)
+
+<sub>One save. Everyone's turn. The replay updates after the Action finishes.</sub>
 
 <details>
-<summary><strong>Controls</strong></summary>
+<summary><strong>Manual input / fallback</strong></summary>
 
-Open the [controller](https://github.com/Unjuno/profile-doom/issues/1), sign in, and post **one** command as a new comment. Each block has its own copy control.
+You can also use the [shared controller](https://github.com/Unjuno/profile-doom/issues/1) and post exactly one command as a comment:
 
-Forward
 ```text
 /forward
-```
-Back
-```text
 /back
-```
-Turn left
-```text
 /left
-```
-Turn right
-```text
 /right
-```
-Fire
-```text
 /fire
-```
-Use / open
-```text
 /use
 ```
 
-Wait for the [run](https://github.com/Unjuno/profile-doom/actions) to finish, then reload this profile. Everyone affects the same session. Clicking the panel opens the controller; it does not send an immediate game input. Image caching may delay the next replay.
+The profile buttons create one-shot input issues. Valid turns are processed by GitHub Actions and closed automatically after a successful deploy.
 
 </details>
 
@@ -58,14 +58,14 @@ Wait for the [run](https://github.com/Unjuno/profile-doom/actions) to finish, th
 
 | Surface | Job |
 | :-- | :-- |
-| This README | Display |
-| [Issue comments](https://github.com/Unjuno/profile-doom/issues/1) | Input |
+| This README | Display + controller |
+| [Issues](https://github.com/Unjuno/profile-doom/issues) | Input queue |
 | [GitHub Actions](https://github.com/Unjuno/profile-doom/actions) | Compute |
 | [Save slot 0](https://github.com/Unjuno/profile-doom/tree/main/state/save) | Memory |
 
 [Read the current saved input](https://github.com/Unjuno/profile-doom/blob/main/state/game.json) · [Inspect the replay manifest](https://unjuno.github.io/profile-doom/panel-v4.json)
 
-Chocolate Doom + Freedoom. The picture is a recorded replay, not a live stream. Its moving line is replay progress, not service health. The input label describes the last persisted command. The game and its snapshot metadata are composed into one image to avoid mixing two separately cached visual assets.
+Chocolate Doom + Freedoom. The picture is a recorded replay, not a live stream. GitHub asks for one confirmation before a prefilled input issue is created. Snapshot metadata describes the last persisted command.
 
 A personal experiment, not an official GitHub feature.
 
