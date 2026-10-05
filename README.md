@@ -1,34 +1,28 @@
 I make things.
 
-### Runtime
-
-<sub><strong>SESSION 01</strong> · shared checkpoint</sub>
-
 <p>
   <a href="https://github.com/Unjuno/profile-doom/issues/1">
     <picture>
-      <source media="(prefers-reduced-motion: reduce)" srcset="https://unjuno.github.io/profile-doom/doom-still.png">
-      <img src="https://unjuno.github.io/profile-doom/doom.gif?profile=2" width="640" alt="Freedoom session replay. Open the shared controller.">
-    </picture>
-  </a>
-  <br>
-  <a href="https://github.com/Unjuno/profile-doom/blob/main/state/game.json">
-    <picture>
-      <source media="(max-width: 767px) and (prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-v3-mobile-dark.svg">
-      <source media="(max-width: 767px) and (prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-v3-mobile-light.svg">
-      <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/status-v3-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/status-v3-light.svg">
-      <img src="https://unjuno.github.io/profile-doom/status-v3-light.svg" width="640" alt="Last recorded input and checkpoint time. Open the state record.">
+      <source media="(prefers-reduced-motion: reduce) and (max-width: 1011px) and (prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/panel-v4-mobile-dark.png">
+      <source media="(prefers-reduced-motion: reduce) and (max-width: 1011px) and (prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/panel-v4-mobile-light.png">
+      <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/panel-v4-desktop-dark.png">
+      <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/panel-v4-desktop-light.png">
+      <source media="(max-width: 1011px) and (prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/panel-v4-mobile-dark.gif">
+      <source media="(max-width: 1011px) and (prefers-color-scheme: light)" srcset="https://unjuno.github.io/profile-doom/panel-v4-mobile-light.gif">
+      <source media="(prefers-color-scheme: dark)" srcset="https://unjuno.github.io/profile-doom/panel-v4-desktop-dark.gif">
+      <img src="https://unjuno.github.io/profile-doom/panel-v4-desktop-light.gif" width="800" alt="Runtime 01. A recorded Freedoom replay with the last saved input. One save, everyone plays. Take a turn: open the GitHub comment controller.">
     </picture>
   </a>
 </p>
 
-[Input](https://github.com/Unjuno/profile-doom/issues/1) · [Runs](https://github.com/Unjuno/profile-doom/actions) · [Checkpoints](https://github.com/Unjuno/profile-doom/commits/main/state/game.json) · [Source](https://github.com/Unjuno/profile-doom)
+[**Take a turn →**](https://github.com/Unjuno/profile-doom/issues/1) · [Runs](https://github.com/Unjuno/profile-doom/actions) · [Save history](https://github.com/Unjuno/profile-doom/commits/main/state/game.json) · [Source](https://github.com/Unjuno/profile-doom)
+
+<sub>Shared save. Comment-driven. Replayed here.</sub>
 
 <details>
-<summary><strong>Input reference</strong></summary>
+<summary><strong>Controls</strong></summary>
 
-Post **one** command as a comment in the [shared controller](https://github.com/Unjuno/profile-doom/issues/1). Each block can be copied separately.
+Open the [controller](https://github.com/Unjuno/profile-doom/issues/1), sign in, and post **one** command as a new comment. Each block has its own copy control.
 
 Forward
 ```text
@@ -55,33 +49,28 @@ Use / open
 /use
 ```
 
-Everyone shares one save. After the run completes, reload the profile to fetch the next replay; image caching may delay an update. The links open the controller, not an immediate in-page game input.
+Wait for the [run](https://github.com/Unjuno/profile-doom/actions) to finish, then reload this profile. Everyone affects the same session. Clicking the panel opens the controller; it does not send an immediate game input. Image caching may delay the next replay.
 
 </details>
 
 <details>
-<summary><strong>Processes</strong></summary>
+<summary><strong>How this runs</strong></summary>
 
-| Process | Execution | State |
-| :-- | :-- | :-- |
-| [profile-doom](https://github.com/Unjuno/profile-doom) | On demand | [Shared checkpoint](https://github.com/Unjuno/profile-doom/blob/main/state/game.json) |
-
-</details>
-
-<details>
-<summary><strong>System</strong></summary>
-
-| Component | Surface |
+| Surface | Job |
 | :-- | :-- |
-| Display | This README |
-| Input | [Issue comments](https://github.com/Unjuno/profile-doom/issues/1) |
-| Compute | [GitHub Actions](https://github.com/Unjuno/profile-doom/actions) |
-| Persistence | [Save slot 0](https://github.com/Unjuno/profile-doom/tree/main/state/save) |
+| This README | Display |
+| [Issue comments](https://github.com/Unjuno/profile-doom/issues/1) | Input |
+| [GitHub Actions](https://github.com/Unjuno/profile-doom/actions) | Compute |
+| [Save slot 0](https://github.com/Unjuno/profile-doom/tree/main/state/save) | Memory |
 
-Chocolate Doom + Freedoom. The screen is a recorded replay, not a live stream. Snapshot metadata describes the last persisted input; it is not a service-health monitor. This is a personal experiment, not a GitHub feature.
+[Read the current saved input](https://github.com/Unjuno/profile-doom/blob/main/state/game.json) · [Inspect the replay manifest](https://unjuno.github.io/profile-doom/panel-v4.json)
+
+Chocolate Doom + Freedoom. The picture is a recorded replay, not a live stream. Its moving line is replay progress, not service health. The input label describes the last persisted command. The game and its snapshot metadata are composed into one image to avoid mixing two separately cached visual assets.
+
+A personal experiment, not an official GitHub feature.
 
 </details>
 
 ---
 
-<sub>[Elsewhere](http://unjuno.org/) · [Repositories](https://github.com/Unjuno?tab=repositories)</sub>
+<sub>[Elsewhere](http://unjuno.org/) · [Repositories](https://github.com/Unjuno?tab=repositories) · Still a README.</sub>
