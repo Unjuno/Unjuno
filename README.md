@@ -15,19 +15,20 @@ I make things.
   </a>
 </p>
 
-<p align="center">
-  <a aria-label="Move forward" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20forward&amp;body=%2Fforward"><kbd>▲</kbd></a>
-  <br><br>
-  <a aria-label="Turn left" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20left&amp;body=%2Fleft"><kbd>◀</kbd></a>
-  &nbsp;
-  <a aria-label="Fire" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20fire&amp;body=%2Ffire"><kbd>FIRE</kbd></a>
-  &nbsp;
-  <a aria-label="Turn right" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20right&amp;body=%2Fright"><kbd>▶</kbd></a>
-  <br><br>
-  <a aria-label="Move back" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20back&amp;body=%2Fback"><kbd>▼</kbd></a>
-  &nbsp;
-  <a aria-label="Use or open" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20use&amp;body=%2Fuse"><kbd>USE</kbd></a>
-</p>
+<table>
+  <tr>
+    <td align="center"><a aria-label="Move forward" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20forward&amp;body=%2Fforward"><kbd>&nbsp;▲ FORWARD&nbsp;</kbd></a></td>
+    <td align="center"><a aria-label="Fire" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20fire&amp;body=%2Ffire"><kbd>&nbsp;FIRE&nbsp;</kbd></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a aria-label="Turn left" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20left&amp;body=%2Fleft"><kbd>&nbsp;◀ LEFT&nbsp;</kbd></a></td>
+    <td align="center"><a aria-label="Turn right" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20right&amp;body=%2Fright"><kbd>&nbsp;RIGHT ▶&nbsp;</kbd></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a aria-label="Move back" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20back&amp;body=%2Fback"><kbd>&nbsp;▼ BACK&nbsp;</kbd></a></td>
+    <td align="center"><a aria-label="Use or open" href="https://github.com/Unjuno/profile-doom/issues/new?title=runtime%2Finput%3A%20use&amp;body=%2Fuse"><kbd>&nbsp;USE / OPEN&nbsp;</kbd></a></td>
+  </tr>
+</table>
 
 <p align="center"><sub>Choose an input. GitHub opens a prefilled turn; press <strong>Submit new issue</strong> once to send it.</sub></p>
 
